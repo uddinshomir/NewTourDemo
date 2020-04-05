@@ -42,7 +42,35 @@ public class NewToursLogin {
 	@Then("User is signed in")
 	public void user_is_signed_in() {
 	    Assert.assertEquals(driver.getTitle(), "Find a Flight: Mercury Tours:");
+	    driver.quit();
 	    
 	}
+	
+	
+	@When("User enters invalid username {string}")
+	public void user_enters_invalid_username(String username) {
+	    driver.findElement(By.xpath("//*[@name='userName']")).sendKeys(username);
+	    
+	}
+
+	@When("User enters invalid password {string}")
+	public void user_enters_invalid_password(String password) {
+	    driver.findElement(By.xpath("//*[@name='password']")).sendKeys(password);
+	    
+	}
+
+	@Then("User fails to sign in")
+	public void user_fails_to_sign_in() {
+	    Assert.assertEquals(driver.getTitle(), "Sign-on: Mercury Tours");
+	    driver.quit();
+	    
+	}
+	
+	@Given("User is already on New Tours")
+	public void user_is_already_on_New_Tours() {
+		Assert.assertEquals(driver.getTitle(), "Welcome: Mercury Tours");
+	}
+
+
 
 }
