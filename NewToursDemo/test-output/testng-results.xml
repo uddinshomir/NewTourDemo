@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22583" started-at="2020-04-05T19:40:47Z" finished-at="2020-04-05T19:41:09Z">
+  <suite name="Default suite" duration-ms="12861" started-at="2020-05-08T17:24:29Z" finished-at="2020-05-08T17:24:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22583" started-at="2020-04-05T19:40:47Z" finished-at="2020-04-05T19:41:09Z">
+    <test name="Default test" duration-ms="12861" started-at="2020-05-08T17:24:29Z" finished-at="2020-05-08T17:24:42Z">
       <class name="com.testng.NewToursUnitTesting">
-        <test-method status="PASS" signature="execution()[pri:0, instance:com.testng.NewToursUnitTesting@5f375618]" name="execution" duration-ms="22555" started-at="2020-04-05T19:40:47Z" finished-at="2020-04-05T19:41:09Z">
+        <test-method status="PASS" signature="execution()[pri:0, instance:com.testng.NewToursUnitTesting@41ee392b]" name="execution" duration-ms="12852" started-at="2020-05-08T17:24:29Z" finished-at="2020-05-08T17:24:42Z">
         </test-method> <!-- execution -->
       </class> <!-- com.testng.NewToursUnitTesting -->
     </test> <!-- Default test -->

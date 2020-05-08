@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.utility.screenShot;
+
 public class GenericLibrary {
 	
 	WebDriver driver;
@@ -38,6 +40,8 @@ public class GenericLibrary {
 		
 		WebElement signInBtn = driver.findElement(By.xpath("//*[@value='Login']")); 
 		signInBtn.click();
+		
+		screenShot.captureScreenShot(driver, "New Tours Login"); 
 	}
 	
 	
